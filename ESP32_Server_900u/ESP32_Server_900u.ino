@@ -42,11 +42,11 @@
                      // with this enabled you do not upload goldhen to the board, set this to false if you wish to upload goldhen.
 
                        // enable autohen [ true / false ]
-#define AUTOHEN false  // this will load goldhen instead of the normal index/payload selection page, use this if you only want hen and no other payloads. 
+#define AUTOHEN true  // this will load goldhen instead of the normal index/payload selection page, use this if you only want hen and no other payloads. 
                        // you can update goldhen by uploading the goldhen payload to the board storage with the filename "goldhen.bin".
 
                      // enable fan threshold [ true / false ]
-#define FANMOD true  // this will include a function to set the consoles fan ramp up temperature in °C 
+#define FANMOD false  // this will include a function to set the consoles fan ramp up temperature in °C 
                      // this will not work if the board is a esp32 and the usb control is disabled.
 
 
@@ -80,7 +80,7 @@ int USB_WAIT = 10000;
 String firmwareVer = "1.00";
 
 //ESP sleep after x minutes
-boolean espSleep = false;
+boolean espSleep = true;
 int TIME2SLEEP = 30;  // minutes
 
 
